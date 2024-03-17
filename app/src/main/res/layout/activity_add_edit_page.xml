@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddEditPageActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:background="#1D1E25"
+        android:backgroundTint="#1D1E25" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/urbanist_semibold"
+                android:gravity="center"
+                android:text="Add Your Todo"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/urbanist_bold"
+        android:text="Title"
+        android:textColor="#020202"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="390dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/todo_title_background"
+        android:ems="10"
+        android:hint="Add Title "
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColorHint="#000000" />
+</LinearLayout>
